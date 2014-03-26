@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+	<head>
+		<script src='popup.js'></script>
+		<style>
+			h2, table, tbody, tr, th, td {
+				font-size: 12px;
+				line-height: 12px;
+				font-weight: normal;
+				margin: 0;
+				padding: 0;
+				text-align: left;
+				font-family: Arial, sans-serif;
+			}
+
+			body {
+				width: 550px;
+			}
+
+			h2 {
+				font-size: 14px;
+				font-weight: bold;
+				margin: 16px 0 2px;
+				padding: 0;
+			}
+
+			#linkedStyles {
+				display: none;
+				margin: 0 0 10px 0;
+				padding: 0 0 10px 0;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			#inlineStyles {
+				display: none;
+				opacity: 0.5; 
+			}
+
+			.stat_table {
+				border-collapse: collapse;
+				border-width: 0;
+				width: 100%;
+			}
+
+			.stat_table th:first-child { width: 70px; }
+			.stat_table th:last-child { width: 50px; text-align: right; }
+
+			.stat_table tr,
+			.stat_table th,
+			.stat_table td {
+				padding: 2px 2px 2px 0;
+			}
+
+			.stat_progress_bar {
+				position: relative;
+			}
+
+			.stat_progress_bar span { 
+				display: block;
+				background-color: #f3f3f3;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				height: 4px;
+				margin-top: -2px;
+			}
+
+			#notFoundMessage h2 {
+				padding: 20px;
+				margin: 0;
+				text-align: center;
+				font-style: italic;
+				color: #555;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="notFoundMessage">
+			<h2>No Stylesheets Found</h2>
+		</div>
+		<div id="linkedStyles"></div>
+		<div id="inlineStyles"></div>
+	</body>
+</html>
